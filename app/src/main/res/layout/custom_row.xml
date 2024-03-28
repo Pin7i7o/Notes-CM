@@ -20,5 +20,13 @@
             android:padding="5dp"
             android:text="@string/note_placeholder"
             android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/date_placeholder"
+            android:textSize="15sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

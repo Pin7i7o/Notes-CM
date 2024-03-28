@@ -11,6 +11,9 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.notes_cm.R
 import com.example.notes_cm.data.entities.Note
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
     private var notesList = emptyList<Note>()
@@ -28,6 +31,10 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = notesList[position]
         holder.itemView.findViewById<TextView>(R.id.note_txt).text = currentItem.note
+
+        val date = Date(currentItem.date)
+        val formattedDate = SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault()).format(date)
+        holder.itemView.findViewById<TextView>(R.id.date_txt).text = formattedDate
 
         if(position%2 == 0)
             holder.itemView.findViewById<ConstraintLayout>(R.id.rowLayout).setBackgroundColor(Color.parseColor("#d6d4e0"))

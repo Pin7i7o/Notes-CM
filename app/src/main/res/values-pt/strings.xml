@@ -12,4 +12,5 @@
     <string name="sucess_msg">A Nota foi guardada com sucesso!!</string>
     <string name="edit_msg">A Nota foi editada com sucesso!!</string>
     <string name="delete_msg">A Nota foi eliminada com sucesso!!</string>
+    <string name="date_placeholder">dd/mm/aaaa</string>
 </resources>

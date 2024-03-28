@@ -4,10 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import com.example.notes_cm.data.dao.NoteDao
 import com.example.notes_cm.data.entities.Note
+import com.example.notes_cm.data.entities.DateConverter
 
 @Database(entities = [Note :: class], version = 1, exportSchema = false)
+@TypeConverters(DateConverter::class)
 abstract class NoteDatabase : RoomDatabase(){
     abstract  fun  noteDao(): NoteDao
 

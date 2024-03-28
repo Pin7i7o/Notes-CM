@@ -57,7 +57,7 @@ class UpdateFragment : Fragment() {
         val currentDate =  Calendar.getInstance().time
         val date = DateConverter.fromDate(currentDate)
 
-        if(noteText.isEmpty() || noteText.length > 5) {
+        if(noteText.isEmpty() || noteText.length < 5) {
             makeText(context , R.string.length_warning, Toast.LENGTH_LONG).show()
         }
         else {

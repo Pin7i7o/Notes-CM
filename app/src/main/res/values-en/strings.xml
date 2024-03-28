@@ -12,4 +12,5 @@
     <string name="sucess_msg">Note has been saved successfully!!</string>
     <string name="edit_msg">Note has been edited successfully!!</string>
     <string name="delete_msg">Note has been deleted successfully!!</string>
+    <string name="date_placeholder">dd/mm/yyyy</string>
 </resources>
