@@ -8,4 +8,8 @@
     <string name="delete_form_txt">Tem a certeza que pretende eliminar esta Nota?</string>
     <string name="confirm_btn">SIM</string>
     <string name="no_btn">NÃO</string>
+    <string name="length_warning">Uma Nota tem de ter no mínimo 5 caracteres!!</string>
+    <string name="sucess_msg">A Nota foi guardada com sucesso!!</string>
+    <string name="edit_msg">A Nota foi editada com sucesso!!</string>
+    <string name="delete_msg">A Nota foi eliminada com sucesso!!</string>
 </resources>

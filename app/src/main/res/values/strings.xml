@@ -7,4 +7,8 @@
     <string name="delete_form_txt">Are you sure you want to delete this Note?</string>
     <string name="confirm_btn">YES</string>
     <string name="no_btn">NO</string>
+    <string name="length_warning">A Note must have a minimum of  5 characters!!</string>
+    <string name="sucess_msg">Note has been saved successfully!!</string>
+    <string name="edit_msg">Note has been edited successfully!!</string>
+    <string name="delete_msg">Note has been deleted successfully!!</string>
 </resources>

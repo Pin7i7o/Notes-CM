@@ -1,5 +1,6 @@
 package com.example.notes_cm.fragments.add
 
+import android.icu.util.Calendar
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.notes_cm.R
+import com.example.notes_cm.data.entities.DateConverter
 import com.example.notes_cm.data.entities.Note
 import com.example.notes_cm.data.vm.NoteViewModel
 
@@ -40,16 +42,18 @@ class AddFragment : Fragment() {
 
     private fun addNote() {
         val noteText = view?.findViewById<EditText>(R.id.addNote)?.text.toString()
+        val currentDate =  Calendar.getInstance().time
+        val date = DateConverter.fromDate(currentDate)
 
-        if(noteText.isEmpty()) {
-            Toast.makeText(view?.context, "Não pode uma nota vazia!", Toast.LENGTH_LONG).show()
+        if(noteText.isEmpty() || noteText.length > 5) {
+            Toast.makeText(view?.context, R.string.length_warning, Toast.LENGTH_LONG).show()
         }
         else {
-            val note = Note(0, noteText)
+            val note = Note(0, noteText, date)
 
             mNoteViewModel.addNote(note)
 
-            Toast.makeText(requireContext(), "Gravado com sucesso!", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), R.string.sucess_msg, Toast.LENGTH_LONG).show()
             findNavController().navigate(R.id.action_addFragment_to_listFragment)
         }
     }
