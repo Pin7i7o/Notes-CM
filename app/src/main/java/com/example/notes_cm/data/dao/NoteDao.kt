@@ -17,7 +17,7 @@ interface NoteDao {
     @Update
     suspend fun updateNote(note: Note)
 
-    @Query("SELECT * FROM notes ORDER BY id DESC")
+    @Query("SELECT * FROM notes ORDER BY date DESC")
     fun readAllNotes() : LiveData<List<Note>>
 
     @Delete
