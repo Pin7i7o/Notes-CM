@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notas-CM</string>
+    <string name="save_btn">Guardar</string>
+    <string name="back_btn">Voltar</string>
+    <string name="delete_btn">Eliminar</string>
+    <string name="note_placeholder">Nota</string>
+    <string name="delete_form_txt">Tem a certeza que pretende eliminar esta Nota?</string>
+    <string name="confirm_btn">SIM</string>
+    <string name="no_btn">NÃO</string>
+</resources>
