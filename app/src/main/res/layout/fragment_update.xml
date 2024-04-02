@@ -30,18 +30,21 @@
             android:id="@+id/update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/save_btn" />
+            android:text="@string/save_btn"
+            android:backgroundTint="@color/peachy" />
 
         <Button
             android:id="@+id/delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/delete_btn" />
+            android:text="@string/delete_btn"
+            android:backgroundTint="@color/peachy" />
 
         <Button
             android:id="@+id/backToListFromUpdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/back_btn" />
+            android:text="@string/back_btn"
+            android:backgroundTint="@color/peachy" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,12 +30,14 @@
             android:id="@+id/save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/save_btn" />
+            android:text="@string/save_btn"
+            android:backgroundTint="@color/peachy" />
 
         <Button
             android:id="@+id/backToList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/back_btn" />
+            android:text="@string/back_btn"
+            android:backgroundTint="@color/peachy" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
